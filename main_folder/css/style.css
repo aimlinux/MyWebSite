@@ -5,16 +5,43 @@
 }
 
 
-#container-upper{
-    background-color: #191970;
-    width: 100vw;
-    height: 10vw;
+/*----調整用スタイル----*/
 
-
+/*--aタグのアンダーラインを非表示--*/
+a {
+    text-decoration: none;
 }
 
-#container-upper-support{
-    background-color: #e6e6fa;
+
+ul,
+li {
+    list-style: none;
+}
+
+
+
+#header {
+    background-color: red;
     width: 100vw;
-    height: 2vw;
+    height: 65px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+
+
+
+#container-upper {
+    background-color: #9999ff;
+    width: 100vw;
+    height: 60px;
+}
+
+#container-upper-support {
+    background-color: #c6c6ff;
+    width: 100vw;
+    height: 5px;
 }
