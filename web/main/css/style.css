@@ -69,6 +69,7 @@ li {
     font-size: 23px;
     text-shadow: 5px 5px 10px rgb(187, 43, 51);
     position: inherit;
+    letter-spacing: 0.1em;
 }
 
 
@@ -255,6 +256,7 @@ li {
     font-weight: bold;
     margin-bottom: 25px;
     text-shadow: 0 4px 6px #fff;
+    letter-spacing: 0.2em;
 }
 #mainvisual .mainvisual-text .mainvisual-btn {
     background-color: #ff2a2a;

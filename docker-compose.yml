@@ -1,0 +1,31 @@
+version: '3.5'
+
+services:
+
+  php-apache:
+    container_name: sample-shop_php_apache_1
+    image: senseshare/php-apache
+    ports:
+      - 8080:80
+    volumes:
+      - ./web:/var/www/html
+    restart: always
+
+  mysql:
+    container_name: sample-shop_mysql_1
+    image: senseshare/mysql
+    volumes:
+      - ./mysql:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: "password"
+    restart: always
+
+  phpmyadmin:
+    container_name: sample-shop_phpmyadmin_1
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - 4040:80
+    environment:
+      PMA_HOST: 'mysql'
+      PMA_USER: 'root'
+      PMA_PASSWORD: 'password'
