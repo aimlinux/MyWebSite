@@ -236,6 +236,48 @@ li {
 
 
 /*--------メインビジュアル--------*/
+
+/*
+テキストとボタンが画像の上に表示されるように「z-index」を設定
+*/
+#mainvisual .mainvisual-text {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    z-index: 10;
+}
+/*
+「text-shadow」で文字の輪郭に白い影をつけることで、
+文字が背景画像に埋もれないようにする
+*/
+#mainvisual .mainvisual-text .mainvisual-title {
+    font-size: 2.875rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-shadow: 0 4px 6px #fff;
+}
+#mainvisual .mainvisual-text .mainvisual-btn {
+    background-color: #ff2a2a;
+  /* 文字の下に影をつけてボタンに立体感を出す */
+    border-bottom: 6px solid #9a0413;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.5rem;
+    display: block;
+    padding: 15px 35px;
+    text-align: center;
+    transition: 0.3s;
+    position: relative;
+}
+/*
+ホバー時は、opacityで透過させながら「transform: scale(1.05);」で
+少しだけボタンのサイズを大きくする
+*/
+#mainvisual .mainvisual-text .mainvisual-btn:hover {
+    opacity: 0.9;
+    transform: scale(1.1);
+}
+
 #mainvisual .fade li {
     width: 100%;
     height: 100%;
@@ -268,8 +310,9 @@ li {
     /*置換コンテンツは要素のコンテンツボックス全体を埋めるサイズになる*/
     object-fit: cover;
 }
-
-/*「box-shadow」で画像のまわりをぼかす*/
+/*
+「box-shadow」で画像のまわりをぼかす
+*/
 #mainvisual .fade li::after {
     content: "";
     position: absolute;
@@ -279,7 +322,6 @@ li {
     right: 0;
     box-shadow: inset 10px -20px 30px 20px #ffffff;
 }
-
 /*
 アニメーション処理
 上の「animation」で15sを指定しているので下記の処理を15秒かけて実行
