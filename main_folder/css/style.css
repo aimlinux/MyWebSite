@@ -1,0 +1,20 @@
+/*----リセットCSS----*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+#container-upper{
+    background-color: #191970;
+    width: 100vw;
+    height: 10vw;
+
+
+}
+
+#container-upper-support{
+    background-color: #e6e6fa;
+    width: 100vw;
+    height: 2vw;
+}
