@@ -92,7 +92,7 @@
 
 
 .menu-content {
-    width: 25vw;
+    width: 30vw;
     height: 100%;
     position: fixed;
     top: 0;
@@ -103,5 +103,5 @@
 }
 
 #menu-btn-check:checked ~ .menu-content {
-    left: 0;/*メニューを画面内へ*/
+    left: 70vw;/*メニューを画面内へ*/
 }
