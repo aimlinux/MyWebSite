@@ -51,7 +51,7 @@ li {
 
 /*----ヘッダータイトル----*/
 .header-title {
-    padding-right: 60vw;
+    padding-right: 0;
 }
 
 .header-title img {
@@ -71,8 +71,9 @@ li {
 /*----検索バー----*/
 .search-form-012 {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /*justify-content: space-between;
+    align-items: center;*/
+    margin-right: -20vw;
     width: 300px; /* 任意の幅に調整してください */
     overflow: hidden;
     border-radius: 25px;
