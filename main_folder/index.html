@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="css/reset.css">
     <!--style.cssの前にreset.cssを読み込む-->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/hamburger.css">
     <title>SassTest</title>
 </head>
 <body>
@@ -22,16 +21,14 @@
             
             <div id='container-upper'>
                 <h1 class="header-title">
-                    <a class="title-text" href="index.html">コンピュータ同好会</a>
+                    <a class="title-text" href="index.html">コンピュータ同好会  ホームページ</a>
                 </h1>
-                
                 <form action="#" class="search-form-012">
                     <label>
                         <input type="text" placeholder="キーワードを入力">
                     </label>
                     <button type="submit" aria-label="検索"></button>
                 </form>
-                
                 <div class="hamburger-menu">
                     <input type="checkbox" id="menu-btn-check">
                     <label for="menu-btn-check" class="menu-btn"><span></span></label>
@@ -39,36 +36,40 @@
                     <div class="menu-content">
                         <ul>
                             <li>
+                                <a href="index.html">ホーム</a>
+                            </li>
+                            <li>
                                 <a href="https://twitter.com/aim_linux">Twitter</a>
                             </li>
                             <li>
                                 <a href="https://github.com/aimlinux">GitHub</a>
                             </li>
                             <li>
-                                <a href="#">メニューリンク3</a>
-                            </li>
-                            <li>
-                                <a href="#">メニューリンク3</a>
-                            </li>
-                            <li>
-                                <a href="#">メニューリンク3</a>
+                                <a href="directory.html">ディレクトリ構造</a>
                             </li>
                         </ul>
                     </div>
                     <!--ここまでメニュー-->
                 </div>
             </div>
-
             <div id='container-upper-support'>
             </div>
-
         </header>
 
 
         <main id="main">
-            <div>
-                メインエリア
+
+            <div id="mainvisual">
+                <div class="mainvisual-text">
+                    <p>おはようみ</p>
+                </div>
+                <ul class="fade">
+                    <li><img src="img/keyboad.jpg" alt=""></li>
+                    <li><img src="img/human.jpg" alt=""></li>
+                    <li><img src="img/programming.jpg" alt=""></li>
+                </ul>
             </div>
+
         </main>
 
         <footer id="footer">

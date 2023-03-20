@@ -1,2 +1,2 @@
-//alert('おはようみあ');
-//console.log('おはようみあ'); 
+//alert('おはようみ');
+//console.log('おはようみ'); 
