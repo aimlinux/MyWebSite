@@ -9,9 +9,11 @@
     <!--==============レイアウトを制御する独自のCSSを読み込み===============-->
     <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
     <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/7-2-3/css/7-2-3.css">
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="../css/reset.css">
     <!--style.cssの前にreset.cssを読み込む-->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/directory.css">
+    <link rel="stylesheet" href="../sass/style.css">
     <title>SassTest</title>
 </head>
 <body>
@@ -21,14 +23,16 @@
             
             <div id='container-upper'>
                 <h1 class="header-title">
-                    <a class="title-text" href="index.html">---- コンピュータ同好会  ホームページ ----</a>
+                    <a class="title-text" href="index.html">コンピュータ同好会</a>
                 </h1>
+                <!--
                 <form action="#" class="search-form-012">
                     <label>
                         <input type="text" placeholder="キーワードを入力">
                     </label>
                     <button type="submit" aria-label="検索"></button>
                 </form>
+                -->
                 <div class="hamburger-menu">
                     <input type="checkbox" id="menu-btn-check">
                     <label for="menu-btn-check" class="menu-btn"><span></span></label>
@@ -39,54 +43,56 @@
                                 <a href="index.html">ホーム</a>
                             </li>
                             <li>
-                                <a href="directory.html">プロジェクト置き場</a>
-                            </li>
-                            <li>
                                 <a href="https://twitter.com/aim_linux">Twitter</a>
                             </li>
                             <li>
                                 <a href="https://github.com/aimlinux">GitHub</a>
                             </li>
                             <li>
-                                <a href="html/directory.html">ディレクトリ構造</a>
+                                <a href="#">メニューリンク3</a>
                             </li>
                             <li>
-                                <a href="html/contact.html">お問い合わせ</a>
+                                <a href="../html/directory.html">ディレクトリ構造</a>
+                            </li>
+                            <li>
+                                <a href="../html/contact.html">お問い合わせ</a>
                             </li>
                         </ul>
                     </div>
                     <!--ここまでメニュー-->
                 </div>
             </div>
+
             <div id='container-upper-support'>
             </div>
+
         </header>
 
 
         <main id="main">
-
-            <div id="mainvisual">
-                <div class="mainvisual-text">
-                    <p class="mainvisual-title">おはよう!!<br>こんにちは!!</p>
-                    <!--「target="_blank"」によって別のページで開かせる-->
-                    <a class="mainvisual-btn" href="https://vscode.dev/" target="_blank">活動報告をする⇒</a>
-                </div>
-                <ul class="fade">
-                    <li><img src="img/keyboad.jpg" alt=""></li>
-                    <li><img src="img/human.jpg" alt=""></li>
-                    <li><img src="img/programming.jpg" alt=""></li>
-                </ul>
+            <div>
+    <section class="get-in-touch">
+        <h1 class="title">お問い合わせ</h1>
+        <form class="contact-form row">
+            <div class="form-field col x-50">
+                <input id="name" class="input-text js-input" type="text" required>
+                <label class="label" for="name">Name</label>
             </div>
-
-            <hr style="height: 20px; color: #000000; ">
-
-            <section id="detail">
-                <h1 class="main-text">--- 活動内容 ---</h1>
-                <h1 class="main-text">--- カレンダー ---</h1>
-                <h1 class="main-text">--- リリースノート ---</h1>
-                <h1 class="main-text">--- ログイン ---</h1>
-            </section>
-
+            <div class="form-field col x-50">
+                <input id="email" class="input-text js-input" type="email" required>
+                <label class="label" for="email">E-mail</label>
+            </div>
+            <div class="form-field col x-100">
+                <input id="message" class="input-text js-input" type="text" required>
+                <label class="label" for="message">Message</label>
+            </div>
+            <div class="form-field col x-100 align-center">
+                <input class="submit-btn" type="submit" value="Submit">
+            </div>
+        </form>
+    </section>
+    <p class="note">Based on <a class="link" href="http://redcollar.digital/contacts/" target="blank">Red Collar Contact Form</a>.</p>
+            </div>
         </main>
 
         <footer id="footer">
