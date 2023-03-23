@@ -73,51 +73,6 @@ li {
 }
 
 
-/*--------検索バー--------*/
-.search-form-012 {
-    display: flex;
-    /*justify-content: space-between;
-    align-items: center;*/
-    margin-right: -20vw;
-    width: 300px; /* 任意の幅に調整してください */
-    overflow: hidden;
-    border-radius: 25px;
-    background-color: #e5f3ff;
-}
-
-.search-form-012 input {
-    
-    height: 45px;
-    padding: 5px 15px;
-    border: none;
-    box-sizing: border-box;
-    background-color: #e5f3ff;
-    font-size: 1em;
-    outline: none;
-}
-
-.search-form-012 input::placeholder {
-    color: #7375b0;
-}
-
-.search-form-012 button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 45px;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-.search-form-012 button::after {
-    width: 20px;
-    height: 20px;
-    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%20%3Cpath%20d%3D%22M23.7%2020.8%2019%2016.1c-.2-.2-.5-.3-.8-.3h-.8c1.3-1.7%202-3.7%202-6C19.5%204.4%2015.1%200%209.7%200S0%204.4%200%209.7s4.4%209.7%209.7%209.7c2.3%200%204.3-.8%206-2v.8c0%20.3.1.6.3.8l4.7%204.7c.4.4%201.2.4%201.6%200l1.3-1.3c.5-.5.5-1.2.1-1.6zm-14-5.1c-3.3%200-6-2.7-6-6s2.7-6%206-6%206%202.7%206%206-2.6%206-6%206z%22%20fill%3D%22%237375b0%22%3E%3C%2Fpath%3E%20%3C%2Fsvg%3E');
-    background-repeat: no-repeat;
-    content: '';
-}
 
 
 
@@ -238,27 +193,21 @@ li {
 
 /*--------メインビジュアル--------*/
 
-/*
-テキストとボタンが画像の上に表示されるように「z-index」を設定
-*/
-#mainvisual .mainvisual-text {
+#mainvisual-first .mainvisual-text {
     position: absolute;
-    top: 32%;
-    left: 10%;
+    top: 30%;
+    left: 12%;
     z-index: 10;
 }
-/*
-「text-shadow」で文字の輪郭に白い影をつけることで、
-文字が背景画像に埋もれないようにする
-*/
-#mainvisual .mainvisual-text .mainvisual-title {
+
+#mainvisual-first .mainvisual-text .mainvisual-title {
     font-size: 2.875rem;
     font-weight: bold;
     margin-bottom: 25px;
     text-shadow: 0 4px 6px #fff;
     letter-spacing: 0.2em;
 }
-#mainvisual .mainvisual-text .mainvisual-btn {
+#mainvisual-first .mainvisual-text .mainvisual-btn {
     background-color: #540cb3;
   /* 文字の下に影をつけてボタンに立体感を出す */
     border-bottom: 6px solid #50045a;
@@ -272,89 +221,51 @@ li {
     position: relative;
 }
 /*
-ホバー時は、opacityで透過させながら「transform: scale(1.05);」で
+ホバー時は、opacityで透過させながら「transform: scale(1.1);」で
 少しだけボタンのサイズを大きくする
 */
-#mainvisual .mainvisual-text .mainvisual-btn:hover {
+#mainvisual-first .mainvisual-text .mainvisual-btn:hover {
     opacity: 0.9;
     transform: scale(1.1);
 }
 
-#mainvisual .fade li {
-    width: 100%;
-    height: 100%;
+
+
+#mainvisual-second .mainvisual-text {
     position: absolute;
-    top: 0;
-    right: 0;
-    /*最初は全ての画像を非表示*/
-    opacity: 0;
-    /*アニメーションを実行
-    fade：下で定義している「@keyframes fade」を実行
-    15s：「@keyframes fade」の処理を15秒かけて実行
-    infinite：アニメーションの処理を無限に繰り返す*/
-    animation: fade 15s infinite;
+    top: 70%;
+    right: 12%;
+    z-index: 10;
 }
 
-#mainvisual .fade li:nth-child(1) {
-    animation-delay: 0s;
+#mainvisual-second .mainvisual-text .mainvisual-title {
+    font-size: 2.875rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-shadow: 0 4px 6px #fff;
+    letter-spacing: 0.2em;
 }
-#mainvisual .fade li:nth-child(2) {
-    animation-delay: 5s;
-}
-#mainvisual .fade li:nth-child(3) {
-    animation-delay: 10s;
-}
-
-#mainvisual .fade li img {
-    margin-top: 8vh;
-    width: 100%;
-    height: 90vh;
-    /*置換コンテンツは要素のコンテンツボックス全体を埋めるサイズになる*/
-    object-fit: cover;
+#mainvisual-second .mainvisual-text .mainvisual-btn {
+    background-color: #540cb3;
+  /* 文字の下に影をつけてボタンに立体感を出す */
+    border-bottom: 6px solid #50045a;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.5rem;
+    display: block;
+    padding: 15px 35px;
+    text-align: center;
+    transition: 0.3s;
+    position: relative;
 }
 /*
-「box-shadow」で画像のまわりをぼかす
+ホバー時は、opacityで透過させながら「transform: scale(1.1);」で
+少しだけボタンのサイズを大きくする
 */
-#mainvisual .fade li::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    box-shadow: inset 10px -20px 30px 20px #ffffff;
+#mainvisual-second .mainvisual-text .mainvisual-btn:hover {
+    opacity: 0.9;
+    transform: scale(1.1);
 }
-/*
-アニメーション処理
-上の「animation」で15sを指定しているので下記の処理を15秒かけて実行
-0%が0秒を表し、100%が15秒後を表す。
-
-0%の「opacity: 0;」で非表示の状態からスタートし、
-15%になるまでの間に少しづつ画像を表示（フェードイン）させる。
-そこから30%の時点までは画像を表示させたままの状態を維持し、
-45%の時点に向けて画像を非表示（フェードアウト）する。
-そこから100%まで非表示の状態を維持する。
-*/
-@keyframes fade {
-    0% {
-    opacity: 0;
-    }
-    15% {
-    opacity: 1;
-    }
-    30% {
-    opacity: 1;
-    }
-    45% {
-    opacity: 0;
-    }
-    100% {
-    opacity: 0;
-    }
-}
-
-
-
 
 
 
@@ -362,10 +273,50 @@ li {
 /*----------------詳細情報----------------*/
 #detail {
     padding-top: 120vh;
+    background: linear-gradient(-180deg, #addedf, #366edd ) 
+    fixed;
 }
 
 #detail .main-text {
     text-align: center;
     font-size: 3em;
+    padding-bottom: 50px;
     
+}
+
+
+
+
+
+/*----------------ボックスエリア----------------*/
+
+
+#detail .box-space {
+    height: 10vh;
+}
+
+
+.main-box-1 {
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 10px 20px 30px 20px;
+    border-top: 5px solid;
+    border-color: #540cb3;
+    border-radius: 10% 10%;
+    box-shadow: 0 6px 6px #584a4a;
+    background-color: #e7e3ec;
+}
+
+.main-box-1 .main-box-title {
+    margin-bottom: 10px;
+    color: #9c3caf;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.main-box-1 .main-box-text {
+    margin: auto;
+    color: #333;
+    font-weight: 600;
+    font-size: 15px;
 }
