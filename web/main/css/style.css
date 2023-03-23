@@ -21,13 +21,15 @@ li {
 /*----------------------------------------
 ページトップ
 ----------------------------------------*/
-.page-top a{
+#page-top a{
     position: fixed;
     color: #ffffff;
     background-color: #50045a;
     right: 1vw;
     bottom: 1vh;
     padding: 20px;
+    border-radius: 20px;
+    opacity: 0.8;
 }
 
 
@@ -37,7 +39,6 @@ li {
 ----------------------------------------*/
 
 #header {
-    background-color: red;
     width: 100vw;
     height: 76px;
     position: fixed;
