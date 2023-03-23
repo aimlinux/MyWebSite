@@ -9,7 +9,7 @@
 <body>
     <div class="contact-form">
         <h1 class="form-title">キュンです！！</h1>
-        <form action="sent.html" method="post">
+        <form action="sent.php" method="post">
             <p class="form-item-name">・お名前</p>
             <input type="text" name="name">
 
