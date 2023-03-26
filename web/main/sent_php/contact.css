@@ -1,0 +1,172 @@
+
+#contact-detail {
+    background: linear-gradient(-180deg, #e0e0e6, #757b7e ) 
+    fixed;
+}
+
+.contact-form {
+    padding-top: 20vh;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 60vh;
+}
+
+@media only screen and (max-width:750px) {
+    .contact-form {
+        padding-top: 40vh;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}
+
+.contact-form .form-title {
+    color: #000000;
+    font-size: 35px;
+    font-weight: 300;
+    padding-bottom: 30px;
+    padding-left: 10%;
+}
+
+.contact-form .form-item {
+    color: #000000;
+    font-size: 25px;
+    font-weight: 200;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-left: 10%;
+}
+
+.contact-form .form-input {
+    width: 50%;
+    padding: 10px;
+    margin-left: 10%;
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+
+.contact-form .form-textarea {
+    width: 70%;
+    height: 200px;
+    padding: 10px;
+    margin-left: 10%;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    border: 1px solid #000000;
+}
+
+.contact-form .form-submit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 200;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    background-color: aqua;
+    margin-left: 10%;
+}
+
+.contact-form .form-submit:hover {
+    transform: scale(1.1);
+    background-color: rgb(75, 150, 150);
+}
+
+
+
+
+/*プライバシーのデザインcss↓*/
+.con_pri {
+    max-width: 70%;
+    margin-left: 10%;
+}
+@media only screen and (max-width: 768px) {
+    .con_pri {
+        width: 75%;
+    }
+}
+.con_pri .box_pri {
+    height: 300px;
+    overflow-y: scroll;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    background: #f7f7f7;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 30px;
+    padding: 20px 40px;
+}
+@media only screen and (max-width: 768px) {
+    .con_pri .box_pri {
+        margin-top: 4%;
+        padding: 3%;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .con_pri .box_pri {
+        padding: 4%;
+    }
+}
+.con_pri .box_pri .box_tori {
+    text-align: left;
+    margin-top: 40px;
+}
+@media only screen and (max-width: 768px) {
+    .con_pri .box_pri .box_tori {
+        margin-top: 4%;
+    }
+}
+.con_pri .box_pri .box_tori h4 {
+    font-weight: normal;
+    margin-bottom: 30px;
+    font-size: 150%;
+}
+@media only screen and (max-width: 768px) {
+    .con_pri .box_pri .box_tori h4 {
+        margin-bottom: 4%;
+    }
+}
+.con_pri .box_pri .box_tori .txt {
+    padding: 0 20px;
+}
+@media only screen and (max-width: 768px) {
+    .con_pri .box_pri .box_tori .txt {
+        padding: 0;
+    }
+}
+.con_pri .box_pri .box_num {
+    margin-top: 30px;
+}
+@media only screen and (max-width: 768px) {
+    .con_pri .box_pri .box_num {
+        margin-top: 5%;
+    }
+}
+.con_pri .box_pri .box_num h4 {
+    font-weight: normal;
+    font-size: 113%;
+}
+.con_pri .box_pri .box_num .txt {
+    padding: 10px 0 0 20px;
+}
+@media only screen and (max-width: 768px) {
+    .con_pri .box_pri .box_num .txt {
+        padding: 3% 0 0 3%;
+    }
+}
+
+.box_check {
+    margin-left: 12%;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.box_check label {
+    display: inline-block;
+}
+.box_check label span {
+    margin-left: .3em;
+}
+
+

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../script/main.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="contact.css">
+    <!--style.cssの前にreset.cssを読み込む-->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>SassTest</title>
+</head>
+<body>
+    <div id="container">
+
+        <!--ヘッダー-->
+        <header id="header">
+            
+            <div id='container-upper'>
+                <h1 class="header-title">
+                    <a class="title-text" href="../index.html">---- aimlinux ----</a>
+                </h1>
+
+                <div class="hamburger-menu">
+                    <input type="checkbox" id="menu-btn-check">
+                    <label for="menu-btn-check" class="menu-btn"><span></span></label>
+                    <!--ここからメニュー-->
+                    <div class="menu-content">
+                        <ul>
+                            <li>
+                                <a href="index.html">ホーム</a>
+                            </li>
+                            <li>
+                                <a href="directory.html">プロジェクト置き場</a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/aim_linux">Twitter</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/aimlinux">GitHub</a>
+                            </li>
+                            <li>
+                                <a href="sent_php/contact.html">お問い合わせ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--ここまでメニュー-->
+                </div>
+            </div>
+            <div id='container-upper-support'>
+            </div>
+        </header>
+
+        <!--メインエリア-->
+        <main id="main">
+
+            <section id="contact-detail">
+                
+                <div class="contact-form">
+                    <h1 class="form-title">お問い合わせフォーム</h1>
+                    <form action="sent.html" method="post">
+                        <p class="form-item">・お名前</p>
+                        <input class="form-input" type="text" name="name">
+            
+                        <p class="form-item">・email</p>
+                        <input class="form-input" type="text" name="email">
+            
+                        <p class="form-item">・内容</p>
+                        <textarea class="form-textarea" name="body" cols="30" rows="10"></textarea>
+
+                        <div class="con_pri">
+                            <div class="box_pri">
+                                <div class="box_tori">
+                                    <h4>プライバシーポリシー</h4>
+                                    <p class="txt">プライバシープライバシープライバシープライバシープライバシープライバシープライバシープライバシープライバシープライバシープライバシープライバシープライバシープライバシープライバシー</p>
+                                </div>
+                                <div class="box_num">
+                                    <h4>プライバシー</h4>
+                                    <p class="txt">プライバシープライバシープライバシープライバシープライバシープライバシープライバシープライバシー</p>
+                                </div>
+                                <div class="box_num">
+                                    <h4>プライバシー</h4>
+                                    <p class="txt">プライバシープライバシープライバシープライバシープライバシープライバシープライバシープライバシー</p>
+                                </div>
+                                <div class="box_num">
+                                    <h4>プライバシー</h4>
+                                    <p class="txt">プライバシープライバシープライバシープライバシープライバシープライバシープライバシープライバシー</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box_check">
+                            <label>
+                                <input type="checkbox" name="acceptance-714" value="1" aria-invalid="false" class="agree" required><span class="check">プライバシーポリシーに同意する</span>
+                            </label>
+                        </div>
+
+                        <input class="form-submit" type="submit" value="送信する">
+
+                    </form>
+                
+                </div>
+
+            </section>
+        </main>
+
+
+        <!--フッター-->
+        <footer id="footer">
+            <div class="footer-area">
+                <div class="col-1">
+                    <h4><a class="footer-homepage" href="#"> aimlinux </a></h4>
+                </div>
+                <div class="col-4">
+                    <h4>Legal?</h4>
+                    <ul class="footer-list">
+                        <li><a class="footer-link" href="#">利用規約</a></li>
+                        <li><a class="footer-link" href="#">プライバシーポリシー</a></li>
+                        <li><a class="footer-link" href="#">-- test --</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h4>Links</h4>
+                    <ul class="footer-list">
+                        <li><a class="footer-link" href="https://twitter.com/aim_linux" target="_blank">Twitter</a></li>
+                        <li><a class="footer-link" href="https://github.com/aimlinux" target="_blank">GitHub</a></li>
+                        <li><a class="footer-link" href="https://qiita.com/aim_linux" target="_blank">Qiita</a></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <h4>Guides</h4>
+                    <ul class="footer-list">
+                        <li><a class="footer-link" href="#">製作者</a></li>
+                        <li><a class="footer-link" href="#">お問い合わせ</a></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <hr>
+                    <p>@2023 aim_linux</p>
+                </div>
+            </div>
+        </footer>
+
+        <!--ページトップへ...-->
+        <div id="page-top">
+            <a href="#">
+                PageTop
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+

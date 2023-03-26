@@ -284,8 +284,8 @@ li {
 少しだけボタンのサイズを大きくする
 */
 .mainvisual-text .mainvisual-btn:hover {
-    opacity: 0.9;
     transform: scale(1.1);
+    background-color: rgb(230, 36, 36);
 }
 
 
