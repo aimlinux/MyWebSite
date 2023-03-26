@@ -81,7 +81,7 @@ li {
 
 /*--------ヘッダータイトル--------*/
 .header-title {
-    padding-right: 0;
+    padding-left: 5%;
 }
 
 .header-title img {
@@ -247,24 +247,37 @@ li {
 }
 
 .mainvisual-text .mainvisual-title {
-    font-size: 3vw;
+    font-size: 40px;
     font-weight: 550;
     margin-bottom: 25px;
     text-shadow: 0 4px 4px #ffffff;
     letter-spacing: 10px;
 }
 .mainvisual-text .mainvisual-btn {
-    background-color: #ddbc95;
+    background-color: #ddba8f;
   /* 文字の下に影をつけてボタンに立体感を出す */
     border-bottom: 6px solid #be9e75;
     border-radius: 10px;
     color: #fff;
-    font-size: 2.5vw;
+    font-size: 30px;
     display: block;
     padding: 15px 35px;
     text-align: center;
     transition: 0.3s;
     position: relative;
+}
+
+@media only screen and (max-width:750px) {
+    .mainvisual-text .mainvisual-title {
+        font-size: 18px;
+        font-weight: 350;
+    }
+    .mainvisual-text .mainvisual-btn {
+        background-color: #ddba8f;
+      /* 文字の下に影をつけてボタンに立体感を出す */
+        font-size: 12px;
+
+    }
 }
 /*
 ホバー時は、opacityで透過させながら「transform: scale(1.1);」で
