@@ -8,7 +8,7 @@ jQuery(function() {
     var pagetop = $('#page-top');
     pagetop.hide();
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 300) {  //100pxスクロールしたら表示
+        if ($(this).scrollTop() > 200) {  //100pxスクロールしたら表示
             pagetop.fadeIn();
         } else {
             pagetop.fadeOut();
