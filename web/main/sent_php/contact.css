@@ -1,3 +1,11 @@
+.keikoku {
+    top: 200px;
+    font-size: 20000%;
+    font-weight: 900;
+    text-align: center;
+    color: red;
+}
+
 
 #contact-detail {
     background: linear-gradient(-180deg, #e0e0e6, #757b7e ) 

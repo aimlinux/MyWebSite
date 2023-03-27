@@ -238,7 +238,7 @@ li {
 
 #mainvisual-first .mainvisual-text {
     position: absolute;
-    top: 35%;
+    top: 40%;
     left: 12%;
     z-index: 10;
 }
@@ -249,6 +249,22 @@ li {
     right: 12%;
     z-index: 10;
 }
+
+/*
+.mainvisual-img {
+    width: 50%;
+    height: 50vh;
+    float: left;
+    margin-left: 40%;
+    margin-top: 5%;
+    border-radius: 50px;
+    filter: saturate(120%);
+    filter: contrast(130%);
+    filter: drop-shadow(0 15px 15px rgb(201, 118, 118));
+    opacity: 80%;
+    position: relative;
+}
+*/
 
 .mainvisual-text .mainvisual-title {
     font-size: 40px;

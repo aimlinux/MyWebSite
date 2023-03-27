@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script/main.js" defer></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+    <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/7-2-3/css/7-2-3.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <!--style.cssの前にreset.cssを読み込む-->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/directory.css">
+    <link rel="stylesheet" href="../sass/style.css">
+    <title>SassTest</title>
+</head>
+<body>
+    <div id="container">
+        
+        <header id="header">
+            
+            <div id='container-upper'>
+                <h1 class="header-title">
+                    <a class="title-text" href="index.html"></a>
+                </h1>
+                <!--
+                <form action="#" class="search-form-012">
+                    <label>
+                        <input type="text" placeholder="キーワードを入力">
+                    </label>
+                    <button type="submit" aria-label="検索"></button>
+                </form>
+                -->
+                <div class="hamburger-menu">
+                    <input type="checkbox" id="menu-btn-check">
+                    <label for="menu-btn-check" class="menu-btn"><span></span></label>
+                    <!--ここからメニュー-->
+                    <div class="menu-content">
+                        <ul>
+                            <li>
+                                <a href="index.html">ホーム</a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/aim_linux">Twitter</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/aimlinux">GitHub</a>
+                            </li>
+                            <li>
+                                <a href="#">メニューリンク3</a>
+                            </li>
+                            <li>
+                                <a href="../html/directory.html">ディレクトリ構造</a>
+                            </li>
+                            <li>
+                                <a href="../html/contact.html">お問い合わせ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--ここまでメニュー-->
+                </div>
+            </div>
+
+            <div id='container-upper-support'>
+            </div>
+
+        </header>
+
+
+        <main id="main">
+            <div>
+    <section class="get-in-touch">
+        <h1 class="title">お問い合わせ</h1>
+        <form class="contact-form row">
+            <div class="form-field col x-50">
+                <input id="name" class="input-text js-input" type="text" required>
+                <label class="label" for="name">Name</label>
+            </div>
+            <div class="form-field col x-50">
+                <input id="email" class="input-text js-input" type="email" required>
+                <label class="label" for="email">E-mail</label>
+            </div>
+            <div class="form-field col x-100">
+                <input id="message" class="input-text js-input" type="text" required>
+                <label class="label" for="message">Message</label>
+            </div>
+            <div class="form-field col x-100 align-center">
+                <input class="submit-btn" type="submit" value="Submit">
+            </div>
+        </form>
+    </section>
+    <p class="note">Based on <a class="link" href="http://redcollar.digital/contacts/" target="blank">Red Collar Contact Form</a>.</p>
+            </div>
+        </main>
+
+        <footer id="footer">
+            <div>
+                フッターエリア
+            </div>
+        </footer>
+
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+<script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/7-2-3/js/7-2-3.js"></script>
+</body>
+</html>
