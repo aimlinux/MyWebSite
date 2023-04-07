@@ -5,7 +5,6 @@
 
 //ページトップボタン...
 jQuery(function() {
-    var appear = false;
     var pagetop = $('#page-top');
     pagetop.hide();
     $(window).scroll(function () {
@@ -30,9 +29,17 @@ jQuery(function() {
 //仮:お問い合わせが完了したとき
 function contact_test() {
 
+    let name = document.getElementById('form_item_name');
+    let email = document.getElementById('form_item_email');
+    let body = document.getElementById('form_item_body');
     let element = document.getElementById('agree');
+    
+    if (name.value == 0) {
+        name.value = '名無し';
+    };
+
     if (element.checked == true) {
-        alert('お問い合わせありがとうございます。  参考にさせていただきます。')
+        alert(name.value + 'さん！！  お問い合わせありがとうございます。  参考にさせていただきます。')
     }
 
     if (element.checked == false) {
@@ -41,7 +48,18 @@ function contact_test() {
 }
 
 
-//開発中
-function project() {
-    alert('開発中')
+
+
+
+
+
+
+
+
+//アラート
+function contact_click() {
+    alert('お問い合わせフォームでいただいたメールは、不具合により受け取ることが出来ません。')
 }
+
+
+

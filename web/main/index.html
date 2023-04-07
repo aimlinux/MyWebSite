@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--ブラウザとスマホのアイコン指定-->
     <link rel="icon" type="image/png" href="./img/icon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="./img/icon.png">
     <script src="script/main.js" defer></script>
+    <!--現状jQuery必要なく、むしろ悪さをしてる気が...-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript" defer></script>
-    <!--==============レイアウトを制御する独自のCSSを読み込み===============-->
-    <link rel="stylesheet" href="css/reset.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
     <!--style.cssの前にreset.cssを読み込む-->
+    <link rel="stylesheet" href="css/reset.css">
+    <!--==============レイアウトを制御する独自のCSSを読み込み===============-->
     <link rel="stylesheet" href="css/style.css">
     <title>aimlinux</title>
 </head>
-<body>
 
+
+<body>
     <div id="container">
 
         <!--ヘッダー-->
@@ -46,7 +49,10 @@
                                 <a href="https://github.com/aimlinux">GitHub</a>
                             </li>
                             <li>
-                                <a href="sent_php/contact.html">お問い合わせ</a>
+                                <a href="#area-1">製作者</a>
+                            </li>
+                            <li>
+                                <a href="sent_php/contact.html" onclick="contact_click()">お問い合わせ</a>
                             </li>
                         </ul>
                     </div>
@@ -66,15 +72,15 @@
 
                     <p class="mainvisual-title">Thanks for </p>
                     <p class="mainvisual-title">opening my site.</p>
-                    <!--「target="_blank"」によって別のページで開かせる-->
                     <a class="mainvisual-btn" href="#area-1">プロフィールへ ⇒</a>
                 </div>
             </div>
 
             <div id="mainvisual-second">
                 <div class="mainvisual-text">
-                    <p class="mainvisual-title">Webアプリ作ってます</p>
-                    <a class="mainvisual-btn" href="project/placement.html" target="_blank" onclick="project()">⇚  プロジェクト置き場へ</a>
+                    <p class="mainvisual-title">Webアプリ開発など</p>
+                    <!--「target="_blank"」によって別のページで開かせる-->
+                    <a class="mainvisual-btn" href="project/placement.html" target="_blank">⇚  プロジェクトへ</a>
                 </div>
             </div>
 
@@ -138,28 +144,8 @@
                     <h1 class="main-box-title">リリースノート</h1>
                     <p class="main-box-text" id="release-notes">
                         
-                        <!--open要素を追加することで最初から開いた状態-->
+                        <!--open要素を追加することで最初から開いた状態-->                
                         <details open>
-                            <summary>バージョン1.10</summary>
-                            
-                            <h3>　v1.0 リリースノート</h3>
-                            <hr>
-                            <p>・リリース日<br></p>
-                            <p>　2023年4月10日<br><br></p>
-                            <p>・リリースバージョン<br></p>
-                            <p>　v1.0</p>
-                            
-                            <h3>　概要</h3>
-                            <hr>
-                            <p>webサーバーへアップロードしました。</p>
-    
-                            <h3>　目的</h3>
-                            <hr>
-                            <p>webサーバーへのアップロード。<br><br><br><br></p>
-                            
-                        </details>
-                        
-                        <details>
                             <summary>バージョン1.0</summary>
 
                             <h3>　v1.0 リリースノート</h3>
@@ -199,8 +185,8 @@
                 <div class="col-4">
                     <h4>Legal</h4>
                     <ul class="footer-list">
-                        <li><a class="footer-link" href="#">利用規約</a></li>
-                        <li><a class="footer-link" href="#">プライバシーポリシー</a></li>
+                        <li><a class="footer-link" href="html/privacy.html">利用規約</a></li>
+                        <li><a class="footer-link" href="html/privacy.html">プライバシーポリシー</a></li>
                     </ul>
                 </div>
                 <div class="col-3">
@@ -214,8 +200,8 @@
                 <div class="col-2">
                     <h4>Guides</h4>
                     <ul class="footer-list">
-                        <li><a class="footer-link" href="#">製作者</a></li>
-                        <li><a class="footer-link" href="./sent_php/contact.html">お問い合わせ</a></li>
+                        <li><a class="footer-link" href="#area-1">製作者</a></li>
+                        <li><a class="footer-link" href="./sent_php/contact.html" onclick="contact_click()">お問い合わせ</a></li>
                     </ul>
                 </div>
                 <div class="row">
