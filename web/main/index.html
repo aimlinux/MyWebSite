@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./img/icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/icon.png">
     <script src="script/main.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript" defer></script>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <!--==============レイアウトを制御する独自のCSSを読み込み===============-->
     <link rel="stylesheet" href="css/reset.css">
     <!--style.cssの前にreset.cssを読み込む-->
     <link rel="stylesheet" href="css/style.css">
-    <title>SassTest</title>
+    <title>aimlinux</title>
 </head>
 <body>
 
@@ -36,7 +37,7 @@
                                 <a href="index.html">ホーム</a>
                             </li>
                             <li>
-                                <a href="html/placement.html">プロジェクト置き場</a>
+                                <a href="project/placement.html">プロジェクト置き場</a>
                             </li>
                             <li>
                                 <a href="https://twitter.com/aim_linux">Twitter</a>
@@ -60,16 +61,11 @@
         <!--メインエリア-->
         <main id="main">
 
-            <!--
-            <div class="mainvisual-imges">
-                <img class="mainvisual-img" src="./img/icon.png" alt="マイアイコン">
-            </div>
-            -->
-
             <div id="mainvisual-first">
                 <div class="mainvisual-text">
-                    
-                    <p class="mainvisual-title">おはよう<br>aimlinux？</p>
+
+                    <p class="mainvisual-title">Thanks for </p>
+                    <p class="mainvisual-title">opening my site.</p>
                     <!--「target="_blank"」によって別のページで開かせる-->
                     <a class="mainvisual-btn" href="#area-1">プロフィールへ ⇒</a>
                 </div>
@@ -78,7 +74,7 @@
             <div id="mainvisual-second">
                 <div class="mainvisual-text">
                     <p class="mainvisual-title">Webアプリ作ってます</p>
-                    <a class="mainvisual-btn" href="html/placement.html" target="_blank">⇚  プロジェクト置き場へ</a>
+                    <a class="mainvisual-btn" href="project/placement.html" target="_blank" onclick="project()">⇚  プロジェクト置き場へ</a>
                 </div>
             </div>
 

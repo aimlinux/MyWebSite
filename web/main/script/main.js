@@ -39,3 +39,9 @@ function contact_test() {
         alert('プライバシーポリシーに同意していません。')
     }
 }
+
+
+//開発中
+function project() {
+    alert('開発中')
+}

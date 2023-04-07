@@ -4,6 +4,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 
@@ -500,7 +501,7 @@ details p{
 
 
 .footer-area h4 {
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: 600;
     margin: 0 0 1em;
     color: #000000;
