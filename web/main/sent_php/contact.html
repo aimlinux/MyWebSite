@@ -22,7 +22,9 @@
             
             <div id='container-upper'>
                 <h1 class="header-title">
-                    <a class="title-text" href="../index.html">aimlinux → お問い合わせ</a>
+                    <a class="title-text" href="../index.html">aimlinux  </a>
+                    <a href="#">→ </a>
+                    <a class="title-text" href="#">お問い合わせフォーム</a>
                 </h1>
 
                 <div class="hamburger-menu">
@@ -61,14 +63,15 @@
 
             <section id="contact-detail">
                 
-                <div class="keikoku-div">
+                <!--<div class="keikoku-div">
                     <h4 class="keikoku">現在お問い合わせフォームは利用できません。</h4>
-                </div>
+                </div>-->
                 
 
                 <div class="contact-form">
                     <h1 class="form-title">お問い合わせフォーム</h1>
-                    <form action="send_mail.php" method="post">
+                    <!------04.07 : 仮を置く（本番環境はsend_mail.php）------>
+                    <form action="../index.html" method="post" name="form">
                         <p class="form-item">・お名前</p>
                         <input class="form-input" type="text" name="name">
             
@@ -100,11 +103,12 @@
                         </div>
                         <div class="box_check">
                             <label>
-                                <input type="checkbox" name="acceptance-714" value="1" aria-invalid="false" class="agree" required><span class="check">プライバシーポリシーに同意する</span>
+                                <input type="checkbox" id="agree" name="check" value="1" aria-invalid="false" class="agree" required>
+                                <span class="check">プライバシーポリシーに同意する</span>
                             </label>
                         </div>
 
-                        <input class="form-submit" type="submit" value="送信する">
+                        <input class="form-submit" type="submit" value="送信する" onclick="contact_test()">
 
                     </form>
                 
@@ -121,11 +125,10 @@
                     <h4><a class="footer-homepage" href="../index.html"> aimlinux </a></h4>
                 </div>
                 <div class="col-4">
-                    <h4>Legal?</h4>
+                    <h4>Legal</h4>
                     <ul class="footer-list">
                         <li><a class="footer-link" href="#">利用規約</a></li>
                         <li><a class="footer-link" href="#">プライバシーポリシー</a></li>
-                        <li><a class="footer-link" href="#">-- test --</a></li>
                     </ul>
                 </div>
                 <div class="col-3">

@@ -22,3 +22,17 @@ jQuery(function() {
 });
 
 
+
+
+//仮:お問い合わせが完了したとき
+function contact_test() {
+
+    let element = document.getElementById('agree');
+    if (element.checked == true) {
+        alert('お問い合わせありがとうございます。  参考にさせていただきます。')
+    }
+
+    if (element.checked == false) {
+        alert('プライバシーポリシーに同意していません。')
+    }
+}
